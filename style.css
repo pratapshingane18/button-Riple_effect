@@ -13,4 +13,24 @@ body{
 .btn{
     background-color: #5adbb5;
     padding: 20px 40px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px ;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    position: relative;
+
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    background-color: azure;
+    width: 0;
+    height: 0;
+    left: 50px;
+    top: 50px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+     
 }
